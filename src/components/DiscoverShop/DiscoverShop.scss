@@ -1,0 +1,59 @@
+@import "../../scss/variables";
+#main {
+  display: flex;
+  flex-direction: column;
+
+  &_descr {
+    position: relative;
+    padding: 30px;
+    &_buttons {
+      top: -60px;
+      right: 0;
+      position: absolute;
+      & button {
+        background-color: black;
+        border: none;
+        width: 60px;
+        height: 60px;
+        & img {
+          max-height: 40%;
+        }
+      }
+    }
+    & #carusel_title {
+      font-size: 36px;
+      font-weight: 700;
+    }
+    & #carusel_more {
+      color: $dark-gray;
+      line-height: 1.3;
+      font-weight: 500;
+      font-size: 15.5px;
+      margin-top: -20px;
+    }
+    & #carusel_button_shop {
+      display: flex;
+      height: 40px;
+      gap: 30px;
+      margin-top: 40px;
+      & p {
+        font-size: 16px;
+        text-transform: uppercase;
+        letter-spacing: 10px;
+        font-weight: 600;
+        align-self: center;
+      }
+      & img {
+        max-height: 40%;
+        align-self: center;
+      }
+    }
+  }
+}
+.hidden {
+  opacity: 0;
+  transition: 0.5s;
+}
+.visible {
+  opacity: 1;
+}

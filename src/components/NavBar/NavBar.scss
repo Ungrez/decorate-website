@@ -1,0 +1,42 @@
+#nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  height: 13vh;
+  align-items: center;
+  &_links {
+    display: flex;
+    position: fixed;
+    background-color: #ffffff;
+    width: 100%;
+    height: 13vh;
+    top: 0;
+    margin-top: 0;
+    box-sizing: border-box;
+    padding: 25px;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.4s;
+    & img {
+      padding-right: 25px;
+    }
+    & a {
+      text-decoration: none;
+      color: black;
+      font-weight: 600;
+    }
+    &.show_nav {
+      top: -15vh;
+    }
+  }
+  & img {
+    &:nth-child(2) {
+      padding-left: 25px;
+    }
+    &:nth-child(3) {
+      justify-self: center;
+    }
+  }
+}

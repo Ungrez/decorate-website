@@ -1,0 +1,11 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  opacity: 0;
+  transition: 0.4s;
+  background-color: white;
+}
+body.loaded {
+  opacity: 1;
+}
